@@ -539,7 +539,6 @@ footer {
   box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
-/* Contact Form */
 .contact-form form {
   display: flex;
   flex-direction: column;

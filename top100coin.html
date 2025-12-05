@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CryptoHub Georgia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=BPG+Gloriola&family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+     </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CryptoHub GE</div>
+    <nav id="navMenu">
+      <a href="index.html">მთავარი</a>
+      <a href="top100coin.html" class="active">ტოპ100 ქოინი</a>
+      <a href="about.html">შესახებ</a>
+      <a href="contact.html">კონტაქტი</a>
+    </nav>
+    <div class="burger" id="burger">☰</div>
+  </header>
+
+  <div class="container">
+    <h1>ტოპ 100 კრიპტოვალუტა რეალური დროის მონაცემები</h1>
+    
+    <div style="margin: 20px 0; text-align: center;">
+      <input type="text" id="searchInput" placeholder="ძებნა სიმბოლით..." onkeyup="filterTable()" style="width: 250px;" />
+      <select onchange="filterByChange()" style="margin-left: 10px;">
+        <option value="all">ყველა</option>
+        <option value="ზრდა">მხოლოდ ზრდადი (+%)</option>
+        <option value="კლება">მხოლოდ კლებადი (-%)</option>
+      </select>
+    </div>
+
+    <div class="table-container">
+      <table id="cryptoTable">
+        <thead>
+          <tr>
+            <th>რეიტინგი</th>
+            <th>სიმბოლო</th>
+            <th>ფასი (USD)</th>
+            <th>24სთ პროცენტული ცვლილება </th>
+            <th>ბოლო 24სთ ფასი</th>
+            <th>მოქმედება</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- მონაცემები იტვირთება JS-ით -->
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align: center; color: #aaa; font-size: 0.9rem;">განახლება ყოველ 30 წამში | მონაცემები: Binance API</p>
+  </div>
+
+<script src="js/market.js"></script>
+  <script src="js/mobilurimenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>რეგისტრაცია</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>რეგისტრაცია</h1>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="სახელი" required />
+      <input type="email" id="email" placeholder="ელ.ფოსტა" required />
+      <input type="password" id="password" placeholder="პაროლი (მინ. 8 სიმბოლო)" required />
+      <div id="strength"></div>
+      <button type="submit">დარეგისტრირდი</button>
+    </form>
+    <p>უკვე გაქვს ანგარიში? <a href="login.html">შედი</a></p>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

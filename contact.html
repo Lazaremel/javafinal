@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>კონტაქტი • CryptoHub Georgia</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">CryptoHub GE</div>
+    <nav id="navMenu">
+      <a href="index.html">მთავარი</a>
+      <a href="top100coin.html">ტოპ100 ქოინი</a>
+      <a href="about.html">ჩვენს შესახებ</a>
+      <a href="contact.html" class="active">კონტაქტი</a>
+    </nav>
+    <div class="burger" id="mobilurimenu">მენიუ</div>
+  </header>
+
+  <main class="container" style="padding-top:140px;">
+    <section class="contact-section">
+      <h1>დაგვიკავშირდით</h1>
+      <p class="subtitle">ჩვენ ყოველთვის მზად ვართ დაგეხმაროთ</p>
+
+      <div class="contact-grid">
+        <div class="contact-form">
+          <form id="contactForm">
+            <input type="text" placeholder="სახელი" required />
+            <input type="email" placeholder="ელ.ფოსტა" required />
+            <input type="text" placeholder="თემა" required />
+            <textarea rows="6" placeholder="თქვენი შეტყობინება..." required></textarea>
+            <button type="submit">გაგზავნა</button>
+          </form>
+          <p id="formMessage" style="margin-top:15px; font-weight:500;"></p>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <h3>Email</h3>
+            <p>info@cryptohub.ge</p>
+          </div>
+          <div class="info-item">
+            <h3>Telegram</h3>
+            <p>@CryptoHubGeorgia</p>
+          </div>
+          <div class="info-item">
+            <h3>სამუშაო საათები</h3>
+            <p>ორშაბათი–პარასკევი: 09:00–22:00<br>
+               შაბათი–კვირა: 10:00–20:00</p>
+          </div>
+          <div class="info-item">
+            <h3>მისამართი</h3>
+            <p>თბილისი, საქართველო</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 CryptoHub Georgia • ყველა უფლება დაცულია</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('formMessage').textContent = 'შეტყობინება გაგზავნილია! მალე დაგიკავშირდებით';
+      document.getElementById('formMessage').style.color = '#16a34a';
+      this.reset();
+    };
+  </script>
+  <script src="js/mobilurimenu.js"></script>
+</body>
+</html>
